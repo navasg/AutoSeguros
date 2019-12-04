@@ -1,0 +1,288 @@
+!!!
+%html{ lang: 'en' }
+  %head
+    %meta{ charset: 'UTF-8' }/
+    %meta{ content: 'width=device-width, initial-scale=1.0', name:'viewport' }/
+    %title AutoSeguros
+    %link{:crossorigin => "anonymous", :href => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", :integrity => "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", :rel => "stylesheet"}/
+    %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/slick-theme.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/slick.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/main.css' }/
+    %link{ rel: 'stylesheet', href:'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css' }/
+    %link{:href => "assets/img/favicon.png", :rel => "shortcut icon"}/
+    %link{ href:'https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Open+Sans:300,400,600,700,800|Roboto:300,400,500,700,900&display=swap',  rel:'stylesheet' }/
+  %body
+    %header.fixed-top.navbar-fixed-js
+      %nav.navbar.navbar-expand-lg
+        .container
+          .main-brand__top
+            .main-brand
+              %a.navbar-brand{ :href => 'index.html' }
+                %img#iso{ :src => 'assets/img/AutoSeguros.png', :alt=>"Logo Autoseguros"}/ 
+          .main-brand__fixed
+            .main-brand
+              %a.navbar-brand{ :href => 'index.html' }
+                %img#iso{ :src => 'assets/img/AutoSeguros.png', :alt=>"Logo Autoseguros" }/ 
+          .main-brand.brand-responsive
+            %a.navbar-brand{ :href => 'index.html' }
+              %img#iso{ :src => 'assets/img/AutoSeguros.png', :alt=>"Logo Autoseguros"}/ 
+            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{ 'data-toggle' => 'offcanvas', :type => 'button' }
+              %span.hamburger-box
+              %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos
+              %li.nav-item
+                %a.nav-link{:href => 'about.html',:data-toggle => 'offcanvas' } Inicio
+              %li.dropdown.nav-item
+                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Seguros
+                -# %ul.dropdown-menu
+                  %li
+                    %a{:href => "attraction-and-talent-selection.html"} Atracción y selección de talento
+                  %li
+                    %a{:href => "youth-program.html"} Programa para jóvenes
+                  %li
+                    %a{:href => "career-development.html"} Desarrollo de carrera
+                  %li
+                    %a{:href => "evaluation-and-career.html"} Evaluación y carrera
+                  %li
+                    %a{:href => "inhouse-consultant.html"} Consultoria inhouse
+                  %li
+                    %a{:href => "employer-brand.html"} Marca empleadora
+              %li.dropdown.nav-item
+                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Nosotros
+                -# %ul.dropdown-menu
+                  %li
+                    %a{:href => "diversity-and-inclusion.html"} Diversidad e inclusión
+                  %li
+                    %a{:href => "future-of-work.html"} Futuro del trabajo
+                  %li
+                    %a{:href => "future-of-education.html"} Futuro de la educación
+                  %li
+                    %a{:href => "brand-building.html"} Construcción de marca empleadora
+                  %li
+                    %a{:href => "dream-race.html"} Carrera de los sueños de los jovenes
+              %li.nav-item
+                %a.nav-link{:target=>"_blank", :data-toggle => 'offcanvas', :href => "https://www.elempleo.com/sitios-empresariales/colombia/consultores-organizacionales", :role => "button"}
+                  Informate
+                -# %ul.dropdown-menu
+                -#   %li
+                -#     %a{:href => "index.html"} Media y alta gerencia
+                -#   %li
+                -#     %a{:href => "index.html"} Profesionales
+              %li.dropdown.nav-item
+                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Tendencias
+                -# %ul.dropdown-menu
+                  %li
+                    %a{:href => "career-tips.html"} Consejos de carrera
+                  %li
+                    %a{:href => "human-management.html"} Gestión humana como aliado estratégico del negocio 
+            -# %ul.main-rrss__responsive
+            -#   %li
+            -#     %img{:src=>'assets/img/facebook.png'}
+            -#   %li
+            -#     %img{:src=>'assets/img/linkedin-letters (1).png'}
+            -#   %li
+            -#     %img{:src=>'assets/img/social-linkedin-circular-button_5@3x.png'}
+            -#   %li
+            -#     %img{:src=>'assets/img/social-linkedin-circular-button_6@3x.png'}
+    %section.main-banner
+      -# %img.main-banner-bg{:src=>"assets/img/Sustracción 1.png"}
+      %ul.main-banner__rrss
+        %li
+          %a{:href=>"#"}
+            %i.fa.fa-facebook
+        %li
+          %a{:href=>"#"}
+            %i.fa.fa-linkedin
+        %li
+          %a{:href=>"#"}
+            %i.fa.fa-instagram    
+      .main-banner__content
+        .main-banner__item
+          .container-grid
+            .main-banner__img
+              %img{:src=>"assets/img/2668181.png", :alt=>""}/
+            .main-banner__text
+              .main-banner__title.wow.animated.fadeInRight{:style=>"visibility: visible; animation-delay: .3s  ;"}
+                %h2 lorem Ipsum 
+              .main-banner__subtitle.wow.animated.fadeInRight{:style=>"visibility: visible; animation-delay: .5s  ;"}
+                %p  
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum amet tenetur quis optio accusantium repudiandae
+                %div.d-flex.justify-content-center.mt-4
+                  %a.main-general__button{:href=>""} Contáctanos
+    %section.main-categories
+      .main-categories__width
+        .container-grid
+          .main-categories__item
+            %img.main-categories__icon{:src=>"assets/img/car-insurance.png"}
+            %p.main-categories__title
+              Seguro
+            %p.main-categories__subtitle
+              Automotriz
+          .main-categories__item
+            %img.main-categories__icon{:src=>"assets/img/shield.png"}
+            %p.main-categories__title
+              Seguro
+            %p.main-categories__subtitle
+              Obligatorio
+          .main-categories__item
+            %img.main-categories__icon{:src=>"assets/img/factor.png"}
+            %p.main-categories__title
+              Seguro
+            %p.main-categories__subtitle
+              Bienes y Empresas
+          .main-categories__item
+            %img.main-categories__icon{:src=>"assets/img/home.png"}
+            %p.main-categories__title
+              Seguro
+            %p.main-categories__subtitle
+              Hogar y Comunidades
+          .main-categories__item
+            %img.main-categories__icon{:src=>"assets/img/insurance.png"}
+            %p.main-categories__title
+              Seguro
+            %p.main-categories__subtitle
+              de Vida Individual y colectivo
+
+
+    %section.main-insurance
+      .container.padding-top-bottom
+        .container-grid
+          .main-insurance__img
+            %img{:src=>"assets/img/tabs.jpg", :alt=>""}
+          .main-insurance__info        
+            #nav-tabContent.tab-content
+              #nav-home.tab-pane.fade.show.active{"aria-labelledby" => "nav-home-tab", :role => "tabpanel"}
+                %h2.main-general__title
+                  %img{:src=>"assets/img/medical-insurance-2.png"}
+                  Seguro Automotriz    
+                %p.main-general__description
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsam sequi! Possimus, distinctio. Mollitia autem consequatur vero in eos ipsam incidunt aperiam nihil corporis accusamus commodi ad qui, molestias debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus necessitatibus ut placeat quidem maxime aperiam modi consequuntur, exercitationem iusto, eaque quos sed nobis, odit vel alias suscipit? Minima, cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus necessitatibus ut placeat quidem maxime aperiam modi consequuntur, exercitationem iusto, eaque quos sed nobis, odit vel alias suscipit? Minima, cum!
+                %a.main-insurence__btn{:href=>""} 
+                  Leer Más
+                  %i.fa.fa-arrow-right          
+              #nav-profile.tab-pane.fade{"aria-labelledby" => "nav-profile-tab", :role => "tabpanel"}
+                %h2.main-general__title
+                  %img{:src=>"assets/img/medical-insurance-2.png"}
+                  Seguro Obligatorio    
+                %p.main-general__description
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsam sequi! Possimus, distinctio. Mollitia autem consequatur vero in eos ipsam incidunt aperiam nihil corporis accusamus commodi ad qui, molestias debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus necessitatibus ut placeat quidem maxime aperiam modi consequuntur, exercitationem iusto, eaque quos sed nobis, odit vel alias suscipit? Minima, cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus necessitatibus ut placeat quidem maxime aperiam modi consequuntur, exercitationem iusto, eaque quos sed nobis, odit vel alias suscipit? Minima, cum!
+                %a.main-insurence__btn{:href=>""} 
+                  Leer Más
+                  %i.fa.fa-arrow-right              
+              #nav-contact.tab-pane.fade{"aria-labelledby" => "nav-contact-tab", :role => "tabpanel"} 
+                %h2.main-general__title
+                  %img{:src=>"assets/img/medical-insurance-2.png"}
+                  Seguro de Bienes y Empresas   
+                %p.main-general__description
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsam sequi! Possimus, distinctio. Mollitia autem consequatur vero in eos ipsam incidunt aperiam nihil corporis accusamus commodi ad qui, molestias debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus necessitatibus ut placeat quidem maxime aperiam modi consequuntur, exercitationem iusto, eaque quos sed nobis, odit vel alias suscipit? Minima, cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus necessitatibus ut placeat quidem maxime aperiam modi consequuntur, exercitationem iusto, eaque quos sed nobis, odit vel alias suscipit? Minima, cum!
+                %a.main-insurence__btn{:href=>""} 
+                  Leer Más
+                  %i.fa.fa-arrow-right
+              #nav-insurence.tab-pane.fade{"aria-labelledby" => "nav-insurence-tab", :role => "tabpanel"} 
+                %h2.main-general__title
+                  %img{:src=>"assets/img/medical-insurance-2.png"}
+                  Seguro de Hogar y Comunidades
+                %p.main-general__description
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsam sequi! Possimus, distinctio. Mollitia autem consequatur vero in eos ipsam incidunt aperiam nihil corporis accusamus commodi ad qui, molestias debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus necessitatibus ut placeat quidem maxime aperiam modi consequuntur, exercitationem iusto, eaque quos sed nobis, odit vel alias suscipit? Minima, cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus necessitatibus ut placeat quidem maxime aperiam modi consequuntur, exercitationem iusto, eaque quos sed nobis, odit vel alias suscipit? Minima, cum!
+                %a.main-insurence__btn{:href=>""} 
+                  Leer Más
+                  %i.fa.fa-arrow-right
+              #nav-insurence2.tab-pane.fade{"aria-labelledby" => "nav-contact2-tab", :role => "tabpanel"} 
+                %h2.main-general__title
+                  %img{:src=>"assets/img/medical-insurance-2.png"}
+                  Seguro de Vida Individual y colectivo
+                %p.main-general__description
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsam sequi! Possimus, distinctio. Mollitia autem consequatur vero in eos ipsam incidunt aperiam nihil corporis accusamus commodi ad qui, molestias debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus necessitatibus ut placeat quidem maxime aperiam modi consequuntur, exercitationem iusto, eaque quos sed nobis, odit vel alias suscipit? Minima, cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui delectus necessitatibus ut placeat quidem maxime aperiam modi consequuntur, exercitationem iusto, eaque quos sed nobis, odit vel alias suscipit? Minima, cum!
+                %a.main-insurence__btn{:href=>""} 
+                  Leer Más
+                  %i.fa.fa-arrow-right
+            %nav
+              #nav-tab.nav.nav-tabs{:role => "tablist"}
+                %a#nav-home-tab.nav-item.nav-link.active{"aria-controls" => "nav-home", "aria-selected" => "true", "data-toggle" => "tab", :href => "#nav-home", :role => "tab"}
+                  %img.main-insurance__icon{:src=>"assets/img/car-insurance.png"}/
+                %a#nav-profile-tab.nav-item.nav-link{"aria-controls" => "nav-profile", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav-profile", :role => "tab"}
+                  %img.main-insurance__icon{:src=>"assets/img/shield.png"}/
+                %a#nav-contact-tab.nav-item.nav-link{"aria-controls" => "nav-contact", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav-contact", :role => "tab"}
+                  %img.main-insurance__icon{:src=>"assets/img/factor.png"}/
+                %a#nav-insurence-tab.nav-item.nav-link{"aria-controls" => "nav-insurence", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav-insurence", :role => "tab"}
+                  %img.main-insurance__icon{:src=>"assets/img/home.png"}/
+                %a#nav-insurence2-tab.nav-item.nav-link{"aria-controls" => "nav-insurence2", "aria-selected" => "false", "data-toggle" => "tab", :href => "#nav-insurence2", :role => "tab"}
+                  %img.main-insurance__icon{:src=>"assets/img/insurance.png"}/
+    %section.main-about
+      .container.padding-top-bottom
+        .container-grid
+          .main-insurance__info
+            %h2.main-general__title
+              %img{:src=>"assets/img/student-hat.png"}
+              Nosotros
+            %p.main-general__description
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, a adipisci debitis asperiores odit provident sint praesentium eius soluta repellat exercitationem voluptatum recusandae numquam aperiam tempore repudiandae excepturi cupiditate placeat.              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, a adipisci debitis asperiores odit provident sint praesentium eius soluta repellat exercitationem voluptatum recusandae numquam aperiam tempore repudiandae excepturi cupiditate placeat.              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, a adipisci debitis asperiores odit provident sint praesentium eius soluta repellat exercitationem voluptatum recusandae numquam aperiam tempore repudiandae excepturi cupiditate placeat.
+          %img.main-about__img{:src=>"assets/img/office.png"}
+
+    
+    %footer.main-footer
+      .padding-top-bottom.container
+        .container-grid
+          .main-footer__item
+            %h2.main-general__title.main-general__title--green
+              %img{:src=>"assets/img/Trazado-21.png"}
+              Información de la compañia
+            %p.main-general__description.main-general__description--white
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, dolore aliquid doloremque illum quibusdam aspernatur consequatur magnam error laudantium perferendis provident corrupti libero, architecto officia minus expedita explicabo nulla pariatur?
+          .main-footer__item
+            %h2.main-general__title.main-general__title--green
+              Contacto
+            %a.main-general__description.main-general__description--white{:href=>"mailto:lorem@lorem.com"}lorem@lorem.com
+            %ul.main-footer__list
+              %li
+                %a{:href=>'#'}
+                  %i.fa.fa-facebook
+              %li
+                %a{:href=>'#'}
+                  %i.fa.fa-linkedin
+              %li
+                %a{:href=>'#'}
+                  %i.fa.fa-twitter
+          .main-footer__item
+            %h2.main-general__title.main-general__title--green
+              Seguros
+            %ul.main-footer__sitemap
+              %li
+                %a.main-general__description--white.main-general__description{:href=>'#'}
+                  Seguro Automotriz 
+              %li
+                %a.main-general__description--white.main-general__description{:href=>'#'}
+                  Seguro Obligatorio 
+              %li
+                %a.main-general__description--white.main-general__description{:href=>'#'}
+                  Seguro Bienes y Empresas 
+              %li
+                %a.main-general__description--white.main-general__description{:href=>'#'}
+                  Seguro de Hogar y Comunidades 
+              %li
+                %a.main-general__description--white.main-general__description{:href=>'#'}
+                  Seguro de Vida Individual y colectivo
+          .main-footer__item
+            %h2.main-general__title.main-general__title--green
+              Informate
+            %p.main-general__description.main-general__description--white
+              Lorem ipsum dolor sit amet consectetur
+    .main-powered
+      %p 
+        Todos los derechos Reservados | Diseño y Desarrollo por: 
+        %a{:href=>""} Contact Marketing
+    %script{src: 'assets/js/jquery.min.js' }
+    %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"}
+    %script{src: 'assets/js/slick.min.js' }
+    %script{src: 'assets/js/setting-slick.js' }
+    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js' }
+    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js' }
+    %script{src: 'assets/js/main.js' }
+
