@@ -871,10 +871,20 @@ button:focus {
       grid-template-columns: 100%;
 
     }
+
+    @include respond-to(sm) {
+      grid-template-columns: 100%;
+
+    }
   }
 
   .main-footer__item {
     @include respond-to(sm) {
+
+      text-align: center;
+    }
+
+    @include respond-to(xs) {
 
       text-align: center;
     }
@@ -886,6 +896,10 @@ button:focus {
     padding: 0;
 
     @include respond-to(xs) {
+      justify-content: center;
+    }
+
+    @include respond-to(sm) {
       justify-content: center;
     }
 
@@ -920,5 +934,26 @@ button:focus {
     margin-left: .5rem;
     font-weight: 800;
     color: #001b57;
+  }
+}
+
+.main-phrase {
+  background-image: url('../img/family.png');
+  background-size: cover;
+
+  .main-phrase__mask {
+    background-image: url('../img/Grupo30.png');
+    // background-size: cover;
+
+    .padding-top-bottom {
+      padding-top: 9rem;
+      padding-bottom: 9rem;
+    }
+  }
+
+  .main-phrase__title {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
   }
 }

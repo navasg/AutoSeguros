@@ -20,7 +20,6 @@
           .main-brand__top
             .main-brand
 
-            
               %a.navbar-brand{ :href => 'index.html' }
                 %img#iso{ :src => 'assets/img/AutoSeguros.png', :alt=>"Logo Autoseguros"}/ 
           .main-brand__fixed
@@ -110,13 +109,13 @@
             .main-banner__img
               %img{:src=>"assets/img/2668181.png", :alt=>""}/
             .main-banner__text
-              .main-banner__title.wow.animated.fadeInRight{:style=>"visibility: visible; animation-delay: .3s  ;"}
+              .main-banner__title.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .3s  ;"}
                 %h2 lorem Ipsum 
-              .main-banner__subtitle.wow.animated.fadeInRight{:style=>"visibility: visible; animation-delay: .5s  ;"}
+              .main-banner__subtitle.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .5s  ;"}
                 %p  
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum amet tenetur quis optio accusantium repudiandae
                 %div.d-flex.justify-content-center.mt-4
-                  %a.main-general__button{:href=>""} Contáctanos
+                  %a.main-general__button.wow.animated.fadeIn{:href=>"", :style=>"visibility: visible; animation-delay: .7s  ;"} Contáctanos
     %section.main-categories
       .main-categories__width
         .container-grid
@@ -155,9 +154,9 @@
     %section.main-insurance
       .container.padding-top-bottom
         .container-grid
-          .main-insurance__img
+          .main-insurance__img.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .2s  ;"}
             %img{:src=>"assets/img/tabs.jpg", :alt=>""}
-          .main-insurance__info        
+          .main-insurance__info.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .3s  ;"}        
             #nav-tabContent.tab-content
               #nav-home.tab-pane.fade.show.active{"aria-labelledby" => "nav-home-tab", :role => "tabpanel"}
                 %h2.main-general__title
@@ -219,15 +218,20 @@
     %section.main-about
       .container.padding-top-bottom
         .container-grid
-          .main-insurance__info
+          .main-insurance__info.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .2s  ;"}
             %h2.main-general__title
               %img{:src=>"assets/img/student-hat.png"}
               Nosotros
             %p.main-general__description
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, a adipisci debitis asperiores odit provident sint praesentium eius soluta repellat exercitationem voluptatum recusandae numquam aperiam tempore repudiandae excepturi cupiditate placeat.              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, a adipisci debitis asperiores odit provident sint praesentium eius soluta repellat exercitationem voluptatum recusandae numquam aperiam tempore repudiandae excepturi cupiditate placeat.              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, a adipisci debitis asperiores odit provident sint praesentium eius soluta repellat exercitationem voluptatum recusandae numquam aperiam tempore repudiandae excepturi cupiditate placeat.
-          %img.main-about__img{:src=>"assets/img/office.png"}
+          %img.main-about__img.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .3s  ;", :src=>"assets/img/office.png"}
 
-    
+    %section.main-phrase
+      .main-phrase__mask
+        .container.padding-top-bottom
+          %h2.main-phrase__title
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores sed consectetur expedita eius accusantium molestiae
+
     %footer.main-footer
       .padding-top-bottom.container
         .container-grid
@@ -278,7 +282,7 @@
     .main-powered
       %p 
         Todos los derechos Reservados | Diseño y Desarrollo por: 
-        %a{:href=>""} Contact Marketing
+        %a{:href=>"https://cmarketing.cl/", :target=>"_blank"} Contact Marketing
     %script{src: 'assets/js/jquery.min.js' }
     %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", :src => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"}
