@@ -1,0 +1,227 @@
+!!!
+%html{ lang: 'en' }
+  %head
+    %meta{ charset: 'UTF-8' }/
+    %meta{ content: 'width=device-width, initial-scale=1.0', name:'viewport' }/
+    %title AutoSeguros
+    %link{:crossorigin => "anonymous", :href => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", :integrity => "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", :rel => "stylesheet"}/
+    %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/font-awesome.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/slick-theme.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/slick.css' }/
+    %link{ rel: 'stylesheet', href:'assets/css/main.css' }/
+    %link{ rel: 'stylesheet', href:'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css' }/
+    %link{:href => "assets/img/favicon.png", :rel => "shortcut icon"}/
+    %link{ href:'https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Open+Sans:300,400,600,700,800|Roboto:300,400,500,700,900&display=swap',  rel:'stylesheet' }/
+  %body
+    %header.fixed-top.navbar-fixed-js
+      %nav.navbar.navbar-expand-lg
+        .container
+          .main-brand__top
+            .main-brand
+
+              %a.navbar-brand{ :href => 'index.html' }
+                %img#iso{ :src => 'assets/img/AutoSeguros.png', :alt=>"Logo Autoseguros"}/ 
+          .main-brand__fixed
+            .main-brand
+              %a.navbar-brand{ :href => 'index.html' }
+                %img#iso{ :src => 'assets/img/AutoSeguros.png', :alt=>"Logo Autoseguros" }/ 
+          .main-brand.brand-responsive
+            %a.navbar-brand{ :href => 'index.html' }
+              %img#iso{ :src => 'assets/img/AutoSeguros.png', :alt=>"Logo Autoseguros"}/ 
+            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{ 'data-toggle' => 'offcanvas', :type => 'button' }
+              %span.hamburger-box
+              %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos
+              %li.nav-item
+                %a.nav-link{:href => 'about.html',:data-toggle => 'offcanvas' } Inicio
+              %li.dropdown.nav-item
+                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Seguros
+                -# %ul.dropdown-menu
+                  %li
+                    %a{:href => "attraction-and-talent-selection.html"} Atracción y selección de talento
+                  %li
+                    %a{:href => "youth-program.html"} Programa para jóvenes
+                  %li
+                    %a{:href => "career-development.html"} Desarrollo de carrera
+                  %li
+                    %a{:href => "evaluation-and-career.html"} Evaluación y carrera
+                  %li
+                    %a{:href => "inhouse-consultant.html"} Consultoria inhouse
+                  %li
+                    %a{:href => "employer-brand.html"} Marca empleadora
+              %li.dropdown.nav-item
+                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Nosotros
+                -# %ul.dropdown-menu
+                  %li
+                    %a{:href => "diversity-and-inclusion.html"} Diversidad e inclusión
+                  %li
+                    %a{:href => "future-of-work.html"} Futuro del trabajo
+                  %li
+                    %a{:href => "future-of-education.html"} Futuro de la educación
+                  %li
+                    %a{:href => "brand-building.html"} Construcción de marca empleadora
+                  %li
+                    %a{:href => "dream-race.html"} Carrera de los sueños de los jovenes
+              %li.nav-item
+                %a.nav-link{:target=>"_blank", :data-toggle => 'offcanvas', :href => "https://www.elempleo.com/sitios-empresariales/colombia/consultores-organizacionales", :role => "button"}
+                  Informate
+                -# %ul.dropdown-menu
+                -#   %li
+                -#     %a{:href => "index.html"} Media y alta gerencia
+                -#   %li
+                -#     %a{:href => "index.html"} Profesionales
+              %li.dropdown.nav-item
+                %a.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  Tendencias
+                -# %ul.dropdown-menu
+                  %li
+                    %a{:href => "career-tips.html"} Consejos de carrera
+                  %li
+                    %a{:href => "human-management.html"} Gestión humana como aliado estratégico del negocio 
+            -# %ul.main-rrss__responsive
+            -#   %li
+            -#     %img{:src=>'assets/img/facebook.png'}
+            -#   %li
+            -#     %img{:src=>'assets/img/linkedin-letters (1).png'}
+            -#   %li
+            -#     %img{:src=>'assets/img/social-linkedin-circular-button_5@3x.png'}
+            -#   %li
+            -#     %img{:src=>'assets/img/social-linkedin-circular-button_6@3x.png'}
+    %section.main-banner
+      -# %img.main-banner-bg{:src=>"assets/img/Sustracción 1.png"}
+      %ul.main-banner__rrss
+        %li
+          %a{:href=>"#"}
+            %i.fa.fa-facebook
+        %li
+          %a{:href=>"#"}
+            %i.fa.fa-linkedin
+        %li
+          %a{:href=>"#"}
+            %i.fa.fa-instagram    
+      .main-banner__content
+        .main-banner__item
+          .container-grid
+            .main-banner__text.main-banner__text--noimg.main-banner__text--padding
+              .main-banner__title.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .3s  ;"}
+                %h2 Seguro Automotriz
+              .main-banner__subtitle.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .5s  ;"}
+                %p  
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum amet tenetur quis optio accusantium repudiandae
+                %div.d-flex.justify-content-center.mt-4
+                  %a.main-general__button.wow.animated.fadeIn{:href=>"", :style=>"visibility: visible; animation-delay: .7s  ;"} Cotizar
+            .main-banner__img.main-banner__img--bg.main-banner__img--padding 
+              %img{:src=>"assets/img/2668181.png", :alt=>""}/
+    %section.main-categories
+      .main-categories__width
+        .container-grid
+          .main-categories__item
+            %img.main-categories__icon{:src=>"assets/img/car-insurance.png"}
+            %p.main-categories__title
+              Seguro
+            %p.main-categories__subtitle
+              Automotriz
+          .main-categories__item
+            %img.main-categories__icon{:src=>"assets/img/shield.png"}
+            %p.main-categories__title
+              Seguro
+            %p.main-categories__subtitle
+              Obligatorio SOAP
+          .main-categories__item
+            %img.main-categories__icon{:src=>"assets/img/home.png"}
+            %p.main-categories__title
+              Seguro
+            %p.main-categories__subtitle
+              Hogar y Comunidades
+          .main-categories__item
+            %img.main-categories__icon{:src=>"assets/img/insurance.png"}
+            %p.main-categories__title
+              Seguro
+            %p.main-categories__subtitle
+              de Vida Individual y colectivo empresas
+          .main-categories__item
+            %img.main-categories__icon{:src=>"assets/img/factor.png"}
+            %p.main-categories__title
+              Seguro
+            %p.main-categories__subtitle
+              Pyme y Empresas
+    %section.main-insurance
+      .container.padding-top-bottom
+        .container-grid
+          .main-insurance__img.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .2s  ;"}
+            %img{:src=>"assets/img/cars.jpg", :alt=>""}
+          .main-insurance__info.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .3s  ;"}        
+            #nav-tabContent.tab-content
+              #nav-home.tab-pane.fade.show.active{"aria-labelledby" => "nav-home-tab", :role => "tabpanel"}
+                %h2.main-general__title
+                  %img{:src=>"assets/img/medical-insurance-2.png"}
+                  Seguro Automotriz    
+                %p.main-general__description
+                  En AutoSeguros.cl tenemos una amplia gama de seguros que se ajustan a tus necesidades y te entregarán el nivel de protección que estás buscando. Aquí encontrarás toda la información acerca de nuestro Seguro Automotriz Full Cobertura. ¿Qué es un Seguro Automotriz Full Cobertura? El Seguro Automotriz Full Cobertura es el seguro para tu automóvil más completo. Te protege ante cualquier evento, accidente, robo, daño o problema que pueda sufrir tu auto y quienes lo conduzcan.
+                %a.main-insurence__btn{:href=>"single-insurance.html"}
+    %section.main-insurance
+      .container.padding-top-bottom
+        .container-grid
+          .main-insurance__info.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .3s  ;"}        
+            #nav-tabContent.tab-content
+              #nav-home.tab-pane.fade.show.active{"aria-labelledby" => "nav-home-tab", :role => "tabpanel"}
+                %h2.main-general__title
+                  %img{:src=>"assets/img/medical-insurance-2.png"}
+                  Cobertura de un Seguro Automotriz   
+                %ul.main-insurance__list
+                  %li
+                    Daños Propios: daños que pueda sufrir el vehículo, sean estos de responsabilidad del propio asegurado o de un tercero.
+                  %li Pérdida Total: responde por robos o daños superiores a lo establecido en el contrato y que amerite indemnización.
+                  %li Responsabilidad Civil: El seguro automotriz se encarga de cubrir los gastos por daños a terceros, ya sean materiales
+                %a.main-insurence__btn{:href=>"single-insurance.html"}
+          .main-insurance__img.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .2s  ;"}
+            %img{:src=>"assets/img/cars.jpg", :alt=>""}
+    %section.main-insurance
+      .container.padding-top-bottom
+        .container-grid
+          .main-insurance__img.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .2s  ;"}
+            %img{:src=>"assets/img/cars.jpg", :alt=>""}
+          .main-insurance__info.wow.animated.fadeIn{:style=>"visibility: visible; animation-delay: .3s  ;"}        
+            #nav-tabContent.tab-content
+              #nav-home.tab-pane.fade.show.active{"aria-labelledby" => "nav-home-tab", :role => "tabpanel"}
+                %h2.main-general__title
+                  %img{:src=>"assets/img/medical-insurance-2.png"}
+                  ¡Beneficios con tu seguro automotriz! 
+                %ul.main-insurance__list
+                  %li
+                    Reparación In Situ: Reparamos tu auto donde estés. Cambio de neumáticos, entrega de combustible, carga de batería y mucho más gratis.
+                  %li 
+                    Auto de reemplazo: En caso de siniestro, reemplazamos tu auto mientras se encuentra en el taller. Este servicio tiene una duración de 45 días. 
+                  %li 
+                    Grúa de emergencia 24/7: Cuanto tu auto esta inmovilizado, vamos donde estés y llevamos el auto donde tú nos indiques (tope 12 uf).
+                  %li 
+                    Conductor de reemplazo: Para que no te preocupes de pasar las llaves. Te ofrecemos 6 servicios gratis al año y atención 24 horas del día.
+                  %li
+                    Revisión técnica: Para tu comodidad, llevamos tu auto a la revisión técnica por ti y lo devolvemos a tu domicilio
+                  %li
+                    Revisión Pre viaje: Para que viajes que tranquilo, revisamos tu auto para prevenir o detectar cualquier desperfecto gratis. 
+                %a.main-insurence__btn{:href=>"single-insurance.html"}
+
+
+
+
+
+    %section.main-form
+      .container.padding-top-bottom
+        %h2.main-general__title.main-general__title--center
+          %img{:src=>"assets/img/chat.png"}
+          Cotiza con Nosotros  
+        .d-flex.justify-content-center.align-items-center.flex-direction-center
+          .main-form__width
+            %form
+              %input{:placeholder=>'Nombre'}
+              %input{:placeholder=>'Apellido'}
+              %input{:placeholder=>'Teléfono'}
+              %input{:placeholder=>'Correo Electrónico'}
+              %textarea{:placeholder=>'Mensaje'}
+              %div.d-flex.justify-content-center.mt-4
+                %a.main-general__button.wow.animated.fadeIn{:href=>"", :style=>"visibility: visible; animation-delay: .7s  ;"} Cotizar

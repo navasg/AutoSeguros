@@ -558,6 +558,10 @@ body :focus {
   margin-bottom: 1.5rem;
 }
 
+.main-general__title--center {
+  text-align: center;
+}
+
 .main-general__description {
   line-height: 1.88;
   color: #001331;
@@ -1056,6 +1060,24 @@ button:focus {
   position: relative;
 }
 
+.main-banner .main-banner__img--bg {
+  background-image: url("../img/Trazado 3.png");
+}
+
+.main-banner .main-banner__text--noimg {
+  background-image: none !important;
+}
+
+.main-banner .main-banner__text--padding {
+  padding-left: 7rem;
+  padding-right: 0;
+}
+
+.main-banner .main-banner__img--padding {
+  padding-right: 7rem;
+  padding-left: 0;
+}
+
 .main-banner .main-banner__text {
   background-image: url("../img/Trazado 3.png");
   width: 100%;
@@ -1278,6 +1300,10 @@ button:focus {
   justify-content: center;
 }
 
+.main-insurance .main-insurance__list li {
+  margin: 1rem 0;
+}
+
 .main-insurance .container-grid {
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
@@ -1459,6 +1485,7 @@ button:focus {
 .main-phrase {
   background-image: url("../img/family.png");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .main-phrase .main-phrase__mask {
@@ -1474,4 +1501,34 @@ button:focus {
   font-size: 2.5rem;
   color: #fff;
   text-align: center;
+}
+
+.main-form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-form input {
+  width: 50%;
+  font-family: "Roboto", sans-serif;
+  padding: .7rem 2rem;
+  border: .5rem solid white;
+  border-radius: 2rem;
+  background: #e8e8e8;
+}
+
+.main-form textarea {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  padding: 1rem 2rem;
+  border: .5rem solid white;
+  border-radius: 2rem;
+  height: 10rem;
+  resize: none;
+  background: #e8e8e8;
+}
+
+.main-form .main-form__width {
+  width: 60%;
 }

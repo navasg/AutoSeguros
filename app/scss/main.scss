@@ -55,6 +55,10 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.main-general__title--center {
+  text-align: center;
+}
+
 .main-general__description {
   line-height: 1.88;
   color: #001331;
@@ -557,6 +561,23 @@ button:focus {
     position: relative;
   }
 
+  .main-banner__img--bg {
+    background-image: url('../img/Trazado 3.png');
+  }
+
+  .main-banner__text--noimg {
+    background-image: none !important;
+  }
+
+  .main-banner__text--padding {
+    padding-left: 7rem;
+    padding-right: 0;
+  }
+
+  .main-banner__img--padding {
+    padding-right: 7rem;
+    padding-left: 0;
+  }
 
   .main-banner__text {
     // background: #041e467a;
@@ -766,6 +787,13 @@ button:focus {
 
 
 .main-insurance {
+
+  .main-insurance__list {
+    li {
+      margin: 1rem 0;
+    }
+  }
+
   .container-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
@@ -940,6 +968,7 @@ button:focus {
 .main-phrase {
   background-image: url('../img/family.png');
   background-size: cover;
+  background-attachment: fixed;
 
   .main-phrase__mask {
     background-image: url('../img/Grupo30.png');
@@ -955,5 +984,39 @@ button:focus {
     font-size: 2.5rem;
     color: #fff;
     text-align: center;
+  }
+}
+
+.main-form {
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  input {
+    width: 50%;
+    font-family: "Roboto", sans-serif;
+    padding: .7rem 2rem;
+    border: .5rem solid white;
+    border-radius: 2rem;
+    background: #e8e8e8;
+
+  }
+
+  textarea {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+
+    padding: 1rem 2rem;
+    border: .5rem solid white;
+    border-radius: 2rem;
+    height: 10rem;
+    resize: none;
+    background: #e8e8e8;
+  }
+
+  .main-form__width {
+    width: 60%;
   }
 }
